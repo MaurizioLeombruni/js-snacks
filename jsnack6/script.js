@@ -19,6 +19,10 @@ function getTotal(){
     infoTotal.innerHTML = "Il numero massimo scelto è: " + numFirst
 }
 
+//Richiamiamo la funzione.
+
+getTotal();
+
 //Randomizziamo un numero sia per il player che per il computer.
 
 numPlayer = Math.floor(Math.random() * numFirst);
@@ -29,7 +33,7 @@ numCPU = Math.floor(Math.random() * numFirst);
 
 //Stampiamo il risultato. Il player vince se ha lo stesso numero del computer.
 
-if(numCPU === numCPU){
+if(numPlayer === numCPU){
     infoResults.innerHTML = "Hai vinto! Il numero era " + numPlayer;
 } else {
     infoResults.innerHTML = "Hai perso. Il tuo numero è " + numPlayer + ", mentre il numero vincente era " + numCPU;
